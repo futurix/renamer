@@ -6,14 +6,19 @@ namespace BasicRenamer
 {
 	public partial class frmMain : Form
 	{
-		public frmMain()
+        private string selectedPath = null;
+        
+        public frmMain()
 		{
 			InitializeComponent();
 		}
 
 		private void btnFolder_Click(object sender, EventArgs e)
 		{
-			if (dlgFolder.ShowDialog() == DialogResult.OK)
+            if (!String.IsNullOrWhiteSpace(selectedPath))
+                dlgFolder.SelectedPath = selectedPath;
+            
+            if (dlgFolder.ShowDialog() == DialogResult.OK)
 			{
 				lbxFiles.Items.Clear();
 				
@@ -21,6 +26,8 @@ namespace BasicRenamer
 				Array.Sort(files);
 
 				lbxFiles.Items.AddRange(files);
+
+                selectedPath = dlgFolder.SelectedPath;
 			}
 		}
 

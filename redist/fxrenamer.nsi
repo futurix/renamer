@@ -1,8 +1,8 @@
 !include "MUI2.nsh"
 
-!define FXVERSION "0.2"
+!define FXVERSION "0.3"
 
-Name "FuturixRenamer"
+Name "Futurix Photo Renamer"
 OutFile "output\futurixrenamer.exe"
 CRCCheck on
 SetCompressor /SOLID lzma
@@ -10,12 +10,12 @@ RequestExecutionLevel highest
 ShowInstDetails nevershow
 ShowUninstDetails nevershow
 
-BrandingText "FuturixRenamer ${FXVERSION}"
+BrandingText "Futurix Photo Renamer ${FXVERSION}"
 
-InstallDir "$PROGRAMFILES\FuturixRenamer"
+InstallDir "$PROGRAMFILES\Futurix Photo Renamer"
 
-!define MUI_WELCOMEPAGE_TITLE "FuturixRenamer ${FXVERSION}"
-!define MUI_WELCOMEPAGE_TEXT "This wizard will guide you through the installation of FuturixRenamer.$\r$\n$\r$\n$_CLICK"
+!define MUI_WELCOMEPAGE_TITLE "Futurix Photo Renamer ${FXVERSION}"
+!define MUI_WELCOMEPAGE_TEXT "This wizard will guide you through the installation of Futurix Photo Renamer.$\r$\n$\r$\n$_CLICK"
 
 !define MUI_COMPONENTSPAGE_NODESC
 !define MUI_ABORTWARNING
@@ -42,8 +42,8 @@ Section "-Core"
   SetDetailsPrint none
   
   SetOutPath "$INSTDIR"
-  File "..\bin\futurixrenamer.exe"
+  File "..\bin\FuturixRenamer.exe"
   
-  CreateShortCut "$SMPROGRAMS\FuturixRenamer.lnk" "$INSTDIR\futurixrenamer.exe"
+  CreateShortCut "$SMPROGRAMS\Futurix Photo Renamer.lnk" "$INSTDIR\FuturixRenamer.exe"
 SectionEnd
 

@@ -1,7 +1,7 @@
-FuturixImager End-User License Agreement
+Futurix Photo Renamer End-User License Agreement
 
 This is a legal agreement between you (either personal or corporate) and
-Alexander Tereshchenko for the software product "FuturixImager".
+Alexander Frost for the software product "Futurix Photo Renamer".
 By copying or using the software in any kind, you agree to be bound by all of
 the terms and conditions of this agreement.
 
@@ -38,8 +38,8 @@ Conditions:
    requires written permission from the author.
 
 
-Copyright © 1999-2008 Alexander Tereshchenko
+Copyright © 1999-2013 Alexander Frost
 All rights reserved
 
-E-mail: info@fximage.com
-Web: http://fximage.com/
+E-mail: info@fxfp.com
+Web: http://fxfp.com/
